@@ -29,6 +29,10 @@ public class BasicCalculator {
                 result = operand1 * operand2;
                 break;
             case "/":
+                if (operand2 == 0) {
+                    System.out.println("Делить на ноль нельзя");
+                    return;
+                }
                 result = operand1 / operand2;
                 break;
             default:
